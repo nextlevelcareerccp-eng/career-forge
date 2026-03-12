@@ -1,0 +1,91 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #1a1a1a;
+}
+header {
+    background: #fff;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+header h1 { font-size: 26px; font-weight: 700; }
+nav a {
+    margin-left: 25px;
+    font-weight: 600;
+    color: #333;
+    transition: color 0.3s;
+}
+nav a:hover { color: #007BFF; }
+.hero {
+    background: linear-gradient(135deg, #007BFF, #00c6ff);
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h2 { font-size: 36px; font-weight: 700; margin-bottom: 20px; }
+.hero p { font-size: 18px; margin-bottom: 30px; }
+.hero .cta-btn {
+    background: #fff;
+    color: #007BFF;
+    padding: 15px 35px;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+.hero .cta-btn:hover { background: #e0f0ff; }
+section {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 20px;
+}
+section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: center;
+}
+section p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #555;
+    text-align: center;
+}
+.features, .templates, .stats, .ai-adv, .cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.card, .feature-card, .template-card, .stat-card, .ai-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin: 15px;
+    flex: 1 1 250px;
+    text-align: center;
+}
+.card h3, .feature-card h3, .template-card h3, .stat-card h3, .ai-card h3 { font-size: 20px; margin-bottom: 10px; }
+.card p, .feature-card p, .template-card p, .stat-card p, .ai-card p { font-size: 14px; color: #666; }
+footer {
+    background: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #e2e2e2;
+    font-size: 14px;
+    color: #777;
+}
+@media (max-width:768px) {
+    header { flex-direction: column; text-align: center; }
+    nav a { margin: 10px; }
+    .features,.templates,.stats,.ai-adv,.cards { flex-direction: column; align-items: center; }
+}
