@@ -5,22 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Career Forge - Home</title>
 <link rel="stylesheet" href="style.css">
-<style>
-/* Additional styling for slider */
-.hero p { font-size: 20px; max-width: 700px; margin: 0 auto 30px auto; }
-.testimonials { position: relative; max-width: 900px; margin: 40px auto; overflow: hidden; }
-.testimonials-container { display: flex; transition: transform 0.5s ease-in-out; }
-.testimonial-card { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); flex: 0 0 100%; text-align: left; }
-.testimonial-card h3 { font-size: 18px; margin-bottom: 10px; color: #007BFF; }
-.testimonial-card p { font-size: 15px; color: #555; }
-.slider-buttons { text-align: center; margin-top: 15px; }
-.slider-buttons button { background: #007BFF; border: none; color: #fff; padding: 8px 12px; margin: 0 5px; border-radius: 5px; cursor: pointer; }
-.slider-buttons button:hover { background: #0056b3; }
-.ai-section { background: #007BFF; color: #fff; padding: 80px 20px; text-align: center; border-radius: 12px; margin: 60px 0; }
-.ai-section h2 { font-size: 32px; margin-bottom: 20px; }
-.ai-section p { font-size: 18px; max-width: 800px; margin: 0 auto; line-height: 1.7; }
-.cta-btn { display: inline-block; margin: 10px 10px 0 0; }
-</style>
+
+<!-- Google Site Verification -->
+<meta name="google-site-verification" content="Nx4WM9IbqCo64KhCYRZm7AB8L2oiB6weaNqEyGqND7Y" />
+
 </head>
 <body>
 
@@ -38,66 +26,34 @@
 
 <section class="hero">
 <h2>Less Effort. More Interviews.</h2>
-<p>Your 2026-ready resume, powered by Career Forge’s AI platform. Bypass rejection and get noticed by recruiters with resumes tailored for success.</p>
+<p>Your 2026-ready resume, powered by AI. Job seekers bypass rejection with Career Forge’s intelligent platform.</p>
 <a href="contact.html" class="cta-btn">Build My Resume</a>
 <a href="contact.html" class="cta-btn">Roast My Resume</a>
 </section>
 
 <section id="testimonials">
 <h2>Candidate Feedback</h2>
-<p>Hear from professionals who landed interviews faster using Career Forge.</p>
+<p>See what Career Forge users are saying about our AI-powered resume tools.</p>
 
-<div class="testimonials">
-<div class="testimonials-container">
-<div class="testimonial-card">
+<div class="features">
+<div class="feature-card">
 <h3>Jane D.</h3>
-<p>"Career Forge made it effortless to create a professional, recruiter-ready resume. I landed interviews in just one week!"</p>
+<p>"Career Forge made it easy to create a professional resume. I landed interviews in just one week!"</p>
 </div>
-<div class="testimonial-card">
+<div class="feature-card">
 <h3>Mark S.</h3>
-<p>"The templates are modern, ATS-friendly, and easy to use. Career Forge helped me stand out from other applicants."</p>
+<p>"The templates are modern and ATS-friendly. I highly recommend Career Forge to anyone looking to get noticed."</p>
 </div>
-<div class="testimonial-card">
+<div class="feature-card">
 <h3>Sara L.</h3>
-<p>"I love the AI suggestions—my resume is perfectly tailored for each job. The platform saved me hours of work."</p>
+<p>"I love how simple it is to update my resume and export it instantly. This platform saves me hours of work."</p>
 </div>
 </div>
-<div class="slider-buttons">
-<button onclick="prevSlide()">&#8592;</button>
-<button onclick="nextSlide()">&#8594;</button>
-</div>
-</div>
-</section>
-
-<section class="ai-section">
-<h2>Stop Getting Rejected by Robots</h2>
-<p>75% of resumes never reach a human recruiter because they fail the Applicant Tracking System (ATS) scan. Generic templates and poor formatting are costing you opportunities.</p>
-<p>Career Forge is your unfair advantage. Our AI analyzes job descriptions and tailors your resume with the exact keywords and formatting that hiring algorithms love.</p>
-<a href="contact.html" class="cta-btn">Build My ATS-Proof Resume</a>
 </section>
 
 <footer>
 &copy; 2026 Career Forge. All Rights Reserved. | Email: <a href="mailto:nextlevelcareer.ccp@gmail.com">nextlevelcareer.ccp@gmail.com</a>
 </footer>
-
-<script>
-let currentIndex = 0;
-const slides = document.querySelectorAll('.testimonial-card');
-const container = document.querySelector('.testimonials-container');
-
-function showSlide(index) {
-    if(index < 0) currentIndex = slides.length - 1;
-    else if(index >= slides.length) currentIndex = 0;
-    else currentIndex = index;
-    container.style.transform = 'translateX(' + (-100 * currentIndex) + '%)';
-}
-
-function nextSlide() { showSlide(currentIndex + 1); }
-function prevSlide() { showSlide(currentIndex - 1); }
-
-// Auto-slide every 5 seconds
-setInterval(() => { nextSlide(); }, 5000);
-</script>
 
 </body>
 </html>
